@@ -84,10 +84,6 @@ eux-mêmes chiffrés avant insertion en base.
 
 Détails complets dans le [rapport](docs/Rapport_SecureWallet.pdf).
 
-## Auteures
-
-**Amal Bakhouya** et **Saida El Machmachi** — ENSIAS, encadrées par **Pr. Wissal Attaoui**.
-
 ## Licence
 
 Distribué sous licence [MIT](LICENSE).
