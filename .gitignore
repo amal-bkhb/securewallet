@@ -1,0 +1,21 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+/build
+/captures
+.externalNativeBuild
+.cxx
+.DS_Store
+local.properties
+
+# Config Firebase — ne jamais versionner (contient l'identifiant du projet)
+# Copier google-services.json.example et le remplacer par votre propre fichier.
+app/google-services.json
+
+# Artefacts de build
+/app/build
+*.apk
+*.aab
+*.keystore
+*.jks

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.securewallet">
+    <!-- Autorisation d'accès à Internet requise par le sujet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SecureWallet"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Écran de connexion (Activité de démarrage / principale) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Écran d'affichage des cartes (Non exporté) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <!-- Écran d'ajout de carte (Non exporté) -->
+        <activity
+            android:name=".AddCardActivity"
+            android:exported="false" />
+        <!-- Écran de détails d'une carte -->
+        <activity
+            android:name=".CardDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+    </application>
+</manifest>

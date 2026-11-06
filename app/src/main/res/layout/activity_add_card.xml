@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+    <!-- Titre de l'écran d'ajout de carte -->
+    <TextView
+        android:id="@+id/tvTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter une carte"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#1565C0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!-- Champ de saisie pour le nom du titulaire -->
+    <EditText
+        android:id="@+id/etNomTitulaire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom du titulaire"
+        android:inputType="textPersonName"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <!-- Champ de saisie pour le numéro de la carte (16 chiffres obligatoires) -->
+    <EditText
+        android:id="@+id/etNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numéro (16 chiffres)"
+        android:inputType="number"
+        android:maxLength="16"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etNomTitulaire"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <!-- Bouton pour sauvegarder les informations de la carte -->
+    <Button
+        android:id="@+id/btnSauvegarder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sauvegarder"
+        android:backgroundTint="#1565C0"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/etNumero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
